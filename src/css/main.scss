@@ -1,0 +1,52 @@
+@import 'colors.scss';
+@import 'bulma_resets.scss';
+@import '~ibm-icon-font/css/ibmicons.css';
+@import './extra-fonts.scss';
+@import '~bulma/bulma.sass';
+@import '~react-select/dist/react-select.css';
+@import 'admin.scss';
+@import 'categories.scss';
+@import 'areas.scss';
+@import 'grupos.scss';
+@import 'assuntos.scss';
+@import 'users.scss';
+@import 'loading.scss';
+@import 'navbar.scss';
+@import 'login.scss';
+@import 'advisor.scss';
+@import 'drop_zone.scss';
+@import 'toast.scss';
+@import 'register_popup.scss';
+
+@media screen and (min-width: 769px), print {
+  .modal-content, .modal-card {
+    width: 100%;
+    margin: 0 40px;
+  }
+}
+
+.notification, .button, .modal, input, select {
+  border-radius: 0 !important;
+}
+
+.tag.is-success {
+  // color: #fff;
+}
+
+.is-small {
+  .fa {
+    font-size: 0.75rem !important;
+  }
+  
+  .ibm-icon {
+    font-size: 1rem !important;
+  }
+}
+
+.hr {
+  border-bottom: 1px solid $gray;
+}
+
+.clickable {
+  cursor: pointer;
+}

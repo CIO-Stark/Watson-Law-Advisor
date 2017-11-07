@@ -1,0 +1,30 @@
+.drop-zone {
+  width: inherit;
+  height: 500px;
+  background: whitesmoke;
+  border-width: 2px; border-color: rgb(102, 102, 102); 
+  border-style: dashed; 
+  text-align: center;
+  cursor: pointer;
+
+  .message {
+    background: transparent;
+    max-width: 50rem;
+    margin: 10rem auto;
+    font-size: 1.5rem !important;
+
+    span {
+      width: inherit;
+      display: block;
+      text-align: center;
+
+      i {
+        font-size: 48px;
+      }
+
+      i.is-primary {
+        color: $primary;
+      }
+    }
+  }
+}

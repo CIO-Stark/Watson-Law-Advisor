@@ -1,0 +1,26 @@
+.users{
+  width: 100%;
+  min-height: 100%;
+
+/* header */
+  .header{
+    top: 0px;
+    left: 0px;
+    position: relative;
+    line-height: 40px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+/* body */
+  .body{
+    top: 0px;
+    left: 0px;
+    position: relative;
+    
+    .container{
+      display: none;
+    }
+    .container.active{
+      display: block !important;
+    }
+  }
+}

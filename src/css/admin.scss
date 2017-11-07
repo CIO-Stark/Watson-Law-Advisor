@@ -1,0 +1,38 @@
+.admin{
+  width: 100%;
+  min-height: 100%;
+
+/* header */
+  > .header{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #dcdcdc;
+
+    > .tab {
+      display: inline-block;
+      width: auto;
+      padding: 0px 20px 0px 20px;
+      height: inherit;
+      line-height: inherit;
+      cursor: pointer;
+      border-right: 1px solid #dcdcdc;
+      transition: .2s;
+    }
+      > .tab:last-child{
+        border-right: none;
+      }
+      > .tab.active,
+      > .tab:hover{
+        border-bottom: 2px solid #a9a9a9;
+      }
+  }
+/* body */
+  > .body{
+    > .container{
+      display: none;
+    }
+    > .container.active{
+      display: block !important;
+    }
+  }
+}

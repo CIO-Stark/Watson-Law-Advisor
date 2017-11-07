@@ -1,0 +1,357 @@
+.advisor {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  min-height: 200px;
+
+  .level {
+    padding-bottom: 5px;
+    margin-bottom: 0 !important;
+
+    .level-item.selected a {
+      color: $dark_grey !important;
+    }
+  }
+  
+  .submenu {
+    .level-item.selected a, a:hover {
+      color: darken($primary, 30%) !important;
+    }
+
+    a.button:hover, a.button-add {
+      color: #fff !important;
+    }
+
+    .button-message {
+      border: 0 !important;
+    }
+  }
+
+  .file-container {
+    height: calc(100vh - 8.8rem);
+    overflow-y: scroll;
+    padding: 0.1rem;
+  }
+
+  .file-item {
+    margin-top: 15px;
+    min-height: 100px;
+    // padding-top: 0.5rem;
+    // padding-bottom: 0.5rem;
+    // padding-right: 3rem;
+    position: relative;
+    box-shadow: 0.05rem 0.05rem 2px $grey;
+
+    // .select-section {
+    //   -webkit-transition: height 1s; 
+    //   -moz-transition: height 1s; 
+    //   -ms-transition: height 1s; 
+    //   -o-transition: height 1s; 
+    //   transition: height 1s; 
+    // }
+
+    .buttons.level {
+      padding: 0.5rem 0.75rem;
+      .level-left {
+        font-size: 0.75rem;
+
+        .level-item span {
+          margin-top: 0.75rem;
+        }
+      }
+
+      .level-right {
+        button, a {
+          margin-left: 3px;
+        }
+      }
+    }
+
+    &:first {
+      margin-top: 0;
+    }
+
+    .columns {
+      margin: 0;
+    }
+
+    .column {
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+    }
+
+    // status
+    .status {
+      .tag {
+        font-size: 0.55rem;
+      }
+    }
+
+    .header {
+      background: transparent !important;
+      padding: 0.5rem 0.75rem !important;
+      font-size: 0.75rem;
+
+      .tag {
+        background: whitesmoke !important;
+        border-radius: 0 !important;
+
+        &.is-success {
+          color: $tag_green !important;
+        }
+
+        &.is-warning {
+          color: $tag_yellow !important;
+        }
+
+        &.is-new {
+          color: $primary !important;
+        }
+      }
+    }
+
+    // Dropbox
+    .Select {
+      font-size: 0.75rem;
+      border-radius: 0 !important;
+
+      &:focus {
+        outline-color: $primary !important;
+        outline-style: auto !important;
+        outline-width: 0 !important;
+      }
+
+      &.is-open {
+        // .Select-arrow {
+        //   border-color: transparent transparent $primary !important;
+        // }
+      }
+
+      &.is-focused:not(.is-open) {
+        .Select-control {
+          border-color: $primary;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 1px rgba($primary, 0.1)
+        }
+      }
+
+      .Select-control {
+        border-radius: 0;
+
+        // .Select-clear-zone {
+        //   color: $primary;
+        // }
+
+        // .Select-arrow {
+        //   border-color: $primary transparent transparent;
+        // }
+      }
+
+      .Select-menu-outer {
+        border-radius: 0;
+      }
+
+      .multi {
+        .Select-value {
+          border-radius: 0;
+          background: rgba($secondary, 0.08);
+          border-color: rgba($secondary, 0.24);
+          color: $secondary;
+        }
+      }
+      
+    }
+
+    .footer {
+      background: transparent !important;
+      padding: 0 !important;
+      font-size: 1.2rem;
+
+      .icon:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .drop-container {
+    padding: 2rem 0;
+  }
+
+  .Select-multi-value-wrapper {
+    max-height: 150px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, .5);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+      box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+  }
+}
+
+.file-modal {
+  height: 700px;
+  overflow: hidden;
+  transition: 1s;
+  background-color: #fff;
+
+  .assunto-dropbox {
+    .Select-value-label {
+      font-size: 0.55rem !important;
+    }
+  }
+
+  &.columns {
+    margin: 0;
+  }
+
+  .label {
+    color: #fff;
+  }
+
+  .modal-subtitles{
+    top: 12px;
+    left: 8px;
+    height: 40px;
+    position: absolute;
+  }
+
+  .file-content {
+    margin-top: 40px;
+    background: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .file-aside {
+    background: $secondary;
+    // background: $dark_grey;
+    // border-left: 1px solid $grey;
+
+    .select-section {
+      height: calc(100% - 60px);
+      overflow: scroll;
+    }
+
+    .bottom {
+      height: 60px;
+
+      .subtitle {
+        font-size: 1rem;
+
+        .discovery.tag {
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .columns {
+      .column {
+        padding: 0.1rem 0.75rem;
+      }
+
+      &:first-child {
+        padding-top: 0.75rem;
+      }
+    }
+  } 
+
+  .select-section {
+    z-index: 5;
+    margin-bottom: 0.75rem;
+  }
+
+  .Select {
+      font-size: 0.75rem;
+      border-radius: 0 !important;
+      margin-bottom: 0.5rem !important;
+
+      &:focus {
+        outline-color: $primary !important;
+        outline-style: auto !important;
+        outline-width: 0 !important;
+      }
+
+      &.is-focused:not(.is-open) {
+        .Select-control {
+          border-color: $primary;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 1px rgba($primary, 0.1)
+        }
+      }
+
+      .Select-menu-outer, .Select-control {
+        border-radius: 0;
+      }
+  }
+
+  .Select-multi-value-wrapper {
+    max-height: 100px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, .5);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+      box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+
+    .Select-value-label {
+      font-size: 0.75rem;
+    }
+  }
+
+  .discovery {
+    padding: 0 0.02rem;
+    // color: #ffe;
+
+    // &.area_judicial {
+    //   background: greenyellow;  
+    // }
+
+    // &.grupo_assunto {
+    //   background: $secondary;
+    // }
+
+    &.assunto {
+      background: greenyellow;
+    }
+
+    &.keywords {
+      background: saturate(#c192a1, 80%);
+    }
+
+    &.entities {
+      background: saturate(#14DEFF, 40%);
+    }
+
+    &.fields {
+      background: saturate(#FFC125, 40%);
+    }
+  }
+
+  .tag {
+    padding: 0 0.2rem;
+    font-size: 0.3rem;
+    margin: 0.2rem 0.2rem 0;
+  }
+
+  .subtitle {
+    font-size: 0.5rem !important;
+    border-radius: 0.1rem;
+  }
+
+}

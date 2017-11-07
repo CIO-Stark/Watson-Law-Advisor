@@ -1,0 +1,19 @@
+nav.nav {
+  box-shadow: 1px 1px 15px $grey;
+
+  .logo {
+    color: $dark_grey;
+
+    img {
+      height: 2rem;
+    }
+
+    p {
+      padding-left: 0.3rem;
+    }
+  }
+
+  .ibm-icon-extra {
+    font-size: 1.4rem;
+  }
+}

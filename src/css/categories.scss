@@ -1,0 +1,39 @@
+.categories{
+  width: 100%;
+  min-height: 100%;
+
+/* header */
+  > .header{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    flex-direction: row;
+
+    > .tab {
+      display: inline-flex;
+      flex-basis: 33%;
+      flex-grow: 1;
+      padding: 0px 20px 0px 20px;
+      height: inherit;
+      line-height: inherit;
+      border-right: 1px solid #dcdcdc;
+      transition: .2s;
+    }
+      > .tab:last-child{
+        border-right: none;
+      }
+  }
+/* body */
+  > .body{
+    display: flex;
+    flex-direction: row;
+
+    > .container{
+      overflow: auto;
+      display: inline-flex;
+      flex-basis: 33%;
+      flex-grow: 0;
+    }
+  }
+}

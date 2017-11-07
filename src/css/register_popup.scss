@@ -1,0 +1,76 @@
+.register-popup {
+    width: 250px;
+    height: 66px;
+    position: absolute;
+    z-index: 10;
+
+    &.box {
+        padding: 0.7rem;
+        padding-top: 0;
+    }
+
+    .register-message {
+        font-size: 0.8rem;
+    }
+
+    .register-buttons {
+        margin-top: -0.5rem;
+    }
+
+    &:before, &:after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 110px;
+        right: auto;
+        top: 64px;
+        bottom: auto;
+        border: 15px solid;
+        border-color: #666 transparent transparent transparent;
+        
+    }
+
+    &:before {
+        left: 109px;
+        border: 16px solid;
+        border-color: #ccc transparent transparent transparent;
+    }
+
+    &:after {
+        border-color: #fff transparent transparent transparent;
+    }
+
+    
+    .slide-in {
+        -webkit-animation: slideIn .5s;
+        animation: slideIn .5s;
+    }
+
+    @-webkit-keyframes slideIn {
+        from{
+         top: 8px; opacity: 0; height: 40px;
+        }
+        to{
+         top: 18px; opacity: 1; height: 80px;
+        }
+    }
+    
+    @-moz-keyframes slideIn {
+        from{
+            top: 8px; opacity: 0; height: 40px;
+        }
+        to{
+            top: 18px; opacity: 1; height: 80px;
+        }
+    }
+    
+    @keyframes slideIn {
+        from{
+            top: 8px; opacity: 0; height: 40px;
+        }
+        to{
+            top: 18px; opacity: 1; height: 80px;
+        }
+    }
+}
